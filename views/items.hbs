@@ -1,0 +1,51 @@
+<div class="items-page">
+        <div class="block_info">
+            <div class="block_info_title">{{title}} на ваш Айфон </div>
+            
+            <div class="divider"></div>
+            <div class="block_info_interactive">
+                <div class="filter">FILTER</div>
+                <div class="sort">SORT ITEMS VIEW</div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="items-page">
+                {{#each items}}
+                    <li class="items-page_item">
+                        <a href="/item/{{_id}}">
+                            <div class="items-page_item_img">
+                                <img src="assets/images/case_1.jpeg" alt="">
+                                <div class="hidden_info">
+                                    <div class="hidden_info_title">{{title}}</div>
+                                    <div class="hidden_info_descr">{{descr}}</div>
+                                </div>
+                            </div>
+                            <div class="items-page_item_info">
+                                <div class="item_price">{{price}}</div>
+                                <form action="" method="post" class="items_item_buy">
+                                    <input type="hidden" name="id" value="{{_id}}">
+                                    <button type="submit" class="btn btn_card">Купить</button>
+                                </form>
+                            </div>
+                        </a>
+                    </li>
+                {{/each}}
+                {{#if admin}}
+                    <li class="items-page_item">
+                        <a href="/items/add">
+                            <div class="items-page_item_img">
+                                +
+                            </div>
+                            <div class="items-page_item_info">
+                                <div class="item_price">{{price}}</div>
+                                <form action="" method="post" class="items_item_buy">
+                                    <button type="submit" class="btn btn_card">Купить</button>
+                                </form>
+                            </div>
+                        </a>
+                    </li>
+                {{/if}}
+
+            </ul>
+        </div>
+    </div>

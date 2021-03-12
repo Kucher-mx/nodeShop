@@ -1,0 +1,58 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: #383636;
+  font-weight: 300;
+  color: #fff; }
+  .btn_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 135px;
+    height: 40px; }
+    .btn_about:hover {
+      color: #fff;
+      text-decoration: none; }
+    .btn_about-page {
+      margin-top: 10px; }
+  .btn_white {
+    background-color: #fff;
+    color: #000; }
+    .btn_white:hover {
+      color: #000; }
+  .btn_subscribeForm {
+    width: 23%;
+    background-color: #000; }
+  .btn_card {
+    width: 85px;
+    height: 30px;
+    background-color: #000; }
+  .btn_item {
+    height: 100%; }
+  .btn_form {
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    width: 150px;
+    height: 40px;
+    transition: .3s box-shadow ease-in; }
+    .btn_form:hover {
+      box-shadow: rgba(0, 0, 0, 0.39) 0px 10px 20px, rgba(0, 0, 0, 0.43) 0px 6px 6px;
+      border: 1px solid rgba(0, 0, 0, 0.3); }
+  .btn_loadFiles input[type=file] {
+    display: block;
+    width: 150px;
+    height: 40px;
+    transition: .3s box-shadow ease-in; }
+    .btn_loadFiles input[type=file]:hover {
+      box-shadow: rgba(0, 0, 0, 0.39) 0px 10px 20px, rgba(0, 0, 0, 0.43) 0px 6px 6px;
+      border: 1px solid rgba(0, 0, 0, 0.3); }
+
+.page_title {
+  text-align: center;
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 300; }

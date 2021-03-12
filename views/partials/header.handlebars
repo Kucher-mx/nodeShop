@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-reboot.min.css" integrity="sha512-wV3xzHEw4kJUF4G0fyXSefKmUVhwwbOdZinJvOxmysxAXSZBl17porgPOcQBDBQTEwgGevxXGWAAQ/UPaSd0nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/splide.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/uicons-regular-rounded.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NodeShop</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header">
+            <div class="container header_container">
+                <div class="header_burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="header_logo"><a href="/">NodeShop</a></div>
+
+                <div class="search-container">
+                    <form method="POST">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div class="header_icons">
+                    <ul class="header_icons_list">
+                        <li id="search" class="header_icons_list_item"><i class="fi-rr-search"></i></li>
+                        <li class="header_icons_list_item">
+                            <a href="#"><i class="fi-rr-shopping-cart"></i></a>
+                            <div class="cart_info hide">
+                                <div class="cart_title">your cart</div>
+                                <ul>
+                                    <li class="cart_item">
+                                        <div class="left">
+                                            <div class="img cart_item_logo">
+                                                <img src="/assets/images/case_1.jpeg" alt="">
+                                            </div>
+                                            <div class="cart_item_name">somename</div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="quantity">x2</div>
+                                            <div class="delete">+</div>
+                                        </div>
+                                    </li>
+                                    <li class="cart_item">
+                                        <div class="left">
+                                            <div class="img cart_item_logo">
+                                                <img src="/assets/images/case_1.jpeg" alt="">
+                                            </div>
+                                            <div class="cart_item_name">somename</div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="quantity">x2</div>
+                                            <div class="delete">+</div>
+                                        </div>
+                                    </li>
+                                    <li class="cart_item">
+                                        <div class="left">
+                                            <div class="img cart_item_logo">
+                                                <img src="/assets/images/case_1.jpeg" alt="">
+                                            </div>
+                                            <div class="cart_item_name">somename</div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="quantity">x2</div>
+                                            <div class="delete">+</div>
+                                        </div>
+                                    </li>
+                                    <li class="cart_item">
+                                        <div class="left">
+                                            <div class="img cart_item_logo">
+                                                <img src="assets/images/case_1.jpeg" alt="">
+                                            </div>
+                                            <div class="cart_item_name">somename</div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="quantity">x2</div>
+                                            <div class="delete">+</div>
+                                        </div>
+                                    </li>
+                                    <li class="cart_item">
+                                        <div class="left">
+                                            <div class="img cart_item_logo">
+                                                <img src="assets/images/case_1.jpeg" alt="">
+                                            </div>
+                                            <div class="cart_item_name">somename</div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="quantity">x2</div>
+                                            <div class="delete">+</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="cart_actions">
+                                    <div class="clear">Clear All</div>
+                                    <form action="/offer" method="post">
+                                        <button type="submit" class="btn btn_buy">offer</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header_icons_list_item"><a href="/profile"><i class="fi-rr-user"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>

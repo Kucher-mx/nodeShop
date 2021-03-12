@@ -1,0 +1,61 @@
+<div class="addItem-page">
+    <div class="block_info_title" style="color: black; text-align: center;">Edit item {{data._id}}</div>
+    <div class="container">
+        <div class="addItem-page_form">
+            <form action="/item/edit/{{data._id}}" method="POST" >
+                <div class="input">
+                    <label for="logPass">Title</label>
+                    <input type="text" name="title"  value="{{data.title}}">
+                </div>
+
+                <div class="input">
+                    <label for="logPass">Description</label>
+                    <input type="text" name="descr"  value="{{data.descr}}">
+                </div>
+
+                <div class="input_prices">
+                    <div class="input">
+                        <label for="logPass">Price old</label>
+                        <input type="number" name="priceOld"  value="{{data.price}}">
+                    </div>
+                    <div class="input">
+                        <label for="logPass">Price new</label>
+                        <input type="number" name="priceNew"  placeholder="Enter...">
+                    </div>
+                    <div class="input">
+                        <label for="logPass">Quantity</label>
+                        <input type="number" name="quantity"  value="{{data.quantity}}">
+                    </div>
+                </div>
+
+                <div class="input">
+                    <label for="logPass">Models (cherez ,)</label>
+                    <input type="text" name="models"  value="{{models}}">
+                </div>
+
+                <div class="input">
+                    <label for="logPass">Colors (cherez ,)</label>
+                    <input type="text" name="colors"  value="{{colors}}">
+                </div>
+
+                <select name="caregories" id="caregories">
+                    {{#each categoriesAvaliable}}
+                        <option value="{{category}}">{{category}}</option>
+                    {{/each}}
+                </select>
+
+                {{!-- <div class="input">
+                    <input type="file" id="file" name="file" multiple placeholder="choose photos">
+                </div> --}}
+
+                <button type="submit" class="btn btn_form">Save</button>
+                
+            </form>
+
+            <form action="/item/remove/{{data._id}}" method="post" style="margin-top: 35px">
+                <button type="submit" class="btn btn_form" >Remove</button>
+            </form>
+            
+        </div>
+    </div>
+</div>

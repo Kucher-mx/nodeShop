@@ -1,0 +1,63 @@
+<div class="reg-page">
+        <div class="container">
+            <div class="reg-page_wrapper">
+                <div class="labels">
+                    <div class="login">
+                        <a href="#">login</a>
+                    </div>
+                    <div class="register">
+                        <a href="#">register</a>
+                    </div>
+                </div>
+                <div class="forms">
+                    <div class="log">
+                        <form action="/auth/log" method="POST">
+                            <div class="input">
+                                <label for="logMail">Email</label>
+                                <input type="email" name="logMail" id="logMail" placeholder="Enter ...">
+                            </div>
+
+                            <div class="input">
+                                <label for="logPass">Password</label>
+                                <input type="password" name="logPass" id="logPass" placeholder="Enter ...">
+                            </div>
+                            
+                            <button type="submit" class="btn btn_form">login</button>
+                        </form>
+                        <div class="reset">
+                            <a href="#">reset</a>
+                        </div>
+                    </div>
+                    <div class="reg hide">
+                        <form action="/auth/reg" method="POST">
+                            <div class="input">
+                                <label for="logMail">Email</label>
+                                <input type="email" name="regMail" id="regMail" placeholder="Enter ...">
+                            </div>
+
+                            <div class="input">
+                                <label for="logPass">Phone</label>
+                                <input type="number" name="regPhone" id="regPhone" placeholder="Enter ...">
+                            </div>
+
+                            <div class="input">
+                                <label for="logPass">Name&Surname</label>
+                                <input type="name" name="regName" id="regName" placeholder="Enter ...">
+                            </div>
+
+                            <div class="input">
+                                <label for="logPass">Password</label>
+                                <input type="password" name="regPass" id="regPass" placeholder="Enter ...">
+                            </div>
+
+                            <div class="input">
+                                <label for="logPass">Repeat password</label>
+                                <input type="password" name="repeatPass" id="repeatPass" placeholder="Enter ...">
+                            </div>
+                            <button type="submit" class="btn btn_form">register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

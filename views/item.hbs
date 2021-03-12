@@ -1,0 +1,164 @@
+<div class="item-page">
+        <div class="container">
+            <div class="item">
+                <div class="item_images">
+                    <div class="item_slider_primary">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="splide__slide__container">
+                                            <img src="/assets/images/case_2.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="splide__slide__container">
+                                            <img src="/assets/images/case_3.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="splide__slide__container">
+                                            <img src="/assets/images/case_5.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item_slider_secondary">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="splide__slide__container">
+                                            <img src="/assets/images/case_2.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="splide__slide__container">
+                                            <img src="/assets/images/case_3.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="splide__slide__container">
+                                            <img src="/assets/images/case_5.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_info">
+                    <div class="item_edit"><a href="/item/edit/{{_id}}">Edit</a></div>
+                    <div class="item_info_title">{{title}}</div>
+                    <div class="item_info_descr">{{descr}}</div>
+                    <div class="item_info_selects">
+                        {{#if models.length}}
+                            <select name="iphone" id="iphone">
+                            
+                                {{#each models}}
+                                    <option value="{{modelName}}">{{modelName}}</option>
+                                {{/each}}
+                            </select>
+                        {{/if}}
+                            
+                        {{#if colors.length}}
+                            <select name="color" id="color">
+                            
+                                {{#each colors}}
+                                    <option value="{{colorName}}">{{colorName}}</option>
+                                {{/each}}
+                            </select>
+                        {{/if}}
+                    </div>
+                    <div class="item_info_wrap">
+                        <div class="item_info_wrap_price">
+                            {{!-- quantity couner --}}
+                            <div class="present">В наличии</div>
+                            <div class="unpresent">Нет в наличии</div>
+                            {{!--  --}}
+                            <div class="price_wraper">
+                                Цена: 
+                                {{#if sale}}
+                                    <div class="old">{{price}}</div>
+                                    <div class="new">make math helper</div>
+                                {{else}}
+                                    <div class="new">{{price}}</div>
+                                {{/if}}
+                            </div>
+                        </div>
+                        <div class="item_info_buy">
+                            <form action="" method="POST">
+                                <div class="item_info_quantity">
+                                    <button class="quantity_plus">+</button>
+                                    <input type="text" name="quantity" id="quantity" value="1" max="{{quantity}}">
+                                    <button class="quantity_dec">-</button>
+                                </div>
+                                <input type="hidden" name="id" value="{{_id}}">
+                                <button type="submit" class="btn btn_item">Купить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block_info_title center">Похожие товары</div>
+
+            <div class="divider item_divider"></div>
+
+            <div class="splide_same splide_slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="splide__slide__container">
+                                    <img src="/assets/images/case_1.jpeg" alt="">
+                                </div>
+                            </a>
+                            <div class="item_sale">20%</div>
+
+                            <div class="item_info">
+                                <div class="popular_item_title">Чехол на Айфон 11</div>
+                                <div class="popular_item_descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque at labore assumenda, illum facere dicta. Quaerat.</div>
+
+                                <div class="popular_item_wrap">
+                                    <div class="item_price">1500</div>
+                                    <form action="/buy" method="post" class="popular_item_buy">
+                                        <button type="submit" class="btn btn_card">Купить</button>
+                                        <input type="hidden" name="price" value="1500">
+                                        <input type="hidden" name="name" value="iphone case 11">
+                                        <input type="hidden" name="sale" value="20%">
+                                    </form>
+                                </div>
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="splide__progress">
+                    <div class="splide__progress__bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

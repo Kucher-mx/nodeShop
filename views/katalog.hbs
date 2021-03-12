@@ -1,0 +1,31 @@
+<div class="catalog-page">
+        <div class="block_info_info">
+            <div class="block_info_title">Каталог товаров</div>
+            
+            <div class="divider"></div>
+            <div class="block_info_interactive">
+                <div class="filter">FILTER</div>
+                <div class="sort">SORT ITEMS VIEW</div>
+            </div> 
+        </div>
+        <div class="container">
+            <ul class="catalog-page_items">
+                {{#each categories}}
+                    <li class="catalog-page_item">
+                        <a href="/category/{{type}}">
+                            <div class="catalog-page_item_img">
+                                <img src="assets/images/case_1.jpeg" alt="">
+                                <div class="hidden_info">
+                                    <div class="hidden_info_title">{{title}}</div>
+                                    <div class="hidden_info_descr">{{descr}}</div>
+                                </div>
+                            </div>
+                            <div class="catalog-page_item_info">
+                                <a href="/category/{{type}}"><div class="catalog-page_item_title">{{alt}}</div></a>
+                            </div>
+                        </a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
