@@ -35,80 +35,82 @@
                 <div class="header_icons">
                     <ul class="header_icons_list">
                         <li id="search" class="header_icons_list_item"><i class="fi-rr-search"></i></li>
-                        <li class="header_icons_list_item">
-                            <a href="#"><i class="fi-rr-shopping-cart"></i></a>
-                            <div class="cart_info hide">
-                                <div class="cart_title">your cart</div>
-                                <ul>
-                                    <li class="cart_item">
-                                        <div class="left">
-                                            <div class="img cart_item_logo">
-                                                <img src="/assets/images/case_1.jpeg" alt="">
+                        {{#if isAuth}}
+                            <li class="header_icons_list_item">
+                                <a href="#"><i class="fi-rr-shopping-cart"></i></a>
+                                <div class="cart_info hide">
+                                    <div class="cart_title">your cart</div>
+                                    <ul>
+                                        <li class="cart_item">
+                                            <div class="left">
+                                                <div class="img cart_item_logo">
+                                                    <img src="/assets/images/case_1.jpeg" alt="">
+                                                </div>
+                                                <div class="cart_item_name">somename</div>
                                             </div>
-                                            <div class="cart_item_name">somename</div>
-                                        </div>
-                                        <div class="right">
-                                            <div class="quantity">x2</div>
-                                            <div class="delete">+</div>
-                                        </div>
-                                    </li>
-                                    <li class="cart_item">
-                                        <div class="left">
-                                            <div class="img cart_item_logo">
-                                                <img src="/assets/images/case_1.jpeg" alt="">
+                                            <div class="right">
+                                                <div class="quantity">x2</div>
+                                                <div class="delete">+</div>
                                             </div>
-                                            <div class="cart_item_name">somename</div>
-                                        </div>
-                                        <div class="right">
-                                            <div class="quantity">x2</div>
-                                            <div class="delete">+</div>
-                                        </div>
-                                    </li>
-                                    <li class="cart_item">
-                                        <div class="left">
-                                            <div class="img cart_item_logo">
-                                                <img src="/assets/images/case_1.jpeg" alt="">
+                                        </li>
+                                        <li class="cart_item">
+                                            <div class="left">
+                                                <div class="img cart_item_logo">
+                                                    <img src="/assets/images/case_1.jpeg" alt="">
+                                                </div>
+                                                <div class="cart_item_name">somename</div>
                                             </div>
-                                            <div class="cart_item_name">somename</div>
-                                        </div>
-                                        <div class="right">
-                                            <div class="quantity">x2</div>
-                                            <div class="delete">+</div>
-                                        </div>
-                                    </li>
-                                    <li class="cart_item">
-                                        <div class="left">
-                                            <div class="img cart_item_logo">
-                                                <img src="assets/images/case_1.jpeg" alt="">
+                                            <div class="right">
+                                                <div class="quantity">x2</div>
+                                                <div class="delete">+</div>
                                             </div>
-                                            <div class="cart_item_name">somename</div>
-                                        </div>
-                                        <div class="right">
-                                            <div class="quantity">x2</div>
-                                            <div class="delete">+</div>
-                                        </div>
-                                    </li>
-                                    <li class="cart_item">
-                                        <div class="left">
-                                            <div class="img cart_item_logo">
-                                                <img src="assets/images/case_1.jpeg" alt="">
+                                        </li>
+                                        <li class="cart_item">
+                                            <div class="left">
+                                                <div class="img cart_item_logo">
+                                                    <img src="/assets/images/case_1.jpeg" alt="">
+                                                </div>
+                                                <div class="cart_item_name">somename</div>
                                             </div>
-                                            <div class="cart_item_name">somename</div>
-                                        </div>
-                                        <div class="right">
-                                            <div class="quantity">x2</div>
-                                            <div class="delete">+</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="cart_actions">
-                                    <div class="clear">Clear All</div>
-                                    <form action="/offer" method="post">
-                                        <button type="submit" class="btn btn_buy">offer</button>
-                                    </form>
+                                            <div class="right">
+                                                <div class="quantity">x2</div>
+                                                <div class="delete">+</div>
+                                            </div>
+                                        </li>
+                                        <li class="cart_item">
+                                            <div class="left">
+                                                <div class="img cart_item_logo">
+                                                    <img src="assets/images/case_1.jpeg" alt="">
+                                                </div>
+                                                <div class="cart_item_name">somename</div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="quantity">x2</div>
+                                                <div class="delete">+</div>
+                                            </div>
+                                        </li>
+                                        <li class="cart_item">
+                                            <div class="left">
+                                                <div class="img cart_item_logo">
+                                                    <img src="assets/images/case_1.jpeg" alt="">
+                                                </div>
+                                                <div class="cart_item_name">somename</div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="quantity">x2</div>
+                                                <div class="delete">+</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="cart_actions">
+                                        <div class="clear">Clear All</div>
+                                        <form action="/offer" method="post">
+                                            <button type="submit" class="btn btn_buy">offer</button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
+                        {{/if}}
                         <li class="header_icons_list_item"><a href="/profile"><i class="fi-rr-user"></i></a></li>
                     </ul>
                 </div>

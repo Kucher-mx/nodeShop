@@ -11,7 +11,9 @@
                 <li><a href="/contacts">Контакты</a></li>
                 <li><a href="/delivery">Доставка и оплата</a></li>
                 <li><a href="/about">О компании</a></li>
-                <li><a href="/auth/logout">Выйти</a></li>
+                {{#if isAuth}}
+                    <li><a href="/auth/logout">Выйти</a></li>
+                {{/if}}
             </ul>
 
             <div class="divider"></div>
@@ -27,7 +29,7 @@
 
             <div class="divider"></div>
 
-            <div class="header_menu_phone"><a href="#">+380631432121</a></div>
+            <div class="header_menu_phone"><a href="tel:380631432121">+380631432121</a></div>
             <div class="header_menu_backcall">Обратный звонок  <span>&#5171</span></div>
         </div>
     </nav>

@@ -7,8 +7,6 @@ router.get('/', async (req, res) => {
     
 
     const categoryItems = await Items.find({category: req.query.category})
-    console.log(categoryItems);
-    console.log(req.user.isAdmin);
     res.render('items', {
         title: req.query.category,
         items: categoryItems,

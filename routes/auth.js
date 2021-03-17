@@ -39,7 +39,6 @@ router.post('/reg', async (req, res) => {
                     email: regMail, password: hashPass, phone: regPhone, name: regName, cart: {items: []}
                 })
                 await newUser.save()
-                console.log(newUser);
             }
             res.redirect('/auth')
         }else {

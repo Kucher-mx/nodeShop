@@ -8,9 +8,9 @@
                     <input type="text" name="title"  placeholder="Enter ...">
                 </div>
 
-                <div class="input">
+                <div class="textarea input">
                     <label for="logPass">Description</label>
-                    <input type="text" name="descr"  placeholder="Enter ...">
+                    <textarea name="descr" id="descr" maxlength="287" rows="3"></textarea>
                 </div>
 
                 <div class="input_prices">
@@ -18,6 +18,12 @@
                         <label for="logPass">Price old</label>
                         <input type="number" name="priceOld"  placeholder="Enter ...">
                     </div>
+
+                    <select name="caregories" id="caregories" class="select">
+                        {{#each categoriesAvaliable}}
+                            <option value="{{category}}">{{category}}</option>
+                        {{/each}}
+                    </select>
                     {{!-- <div class="input">
                         <label for="logPass">Price new</label>
                         <input type="number" name="priceNew"  placeholder="Enter ...">
@@ -38,11 +44,7 @@
                     <input type="text" name="colors"  placeholder="Enter ...">
                 </div>
 
-                <select name="caregories" id="caregories">
-                    {{#each categoriesAvaliable}}
-                        <option value="{{category}}">{{category}}</option>
-                    {{/each}}
-                </select>
+                
 
                 {{!-- <div class="input">
                     <input type="file" id="file" name="file" multiple placeholder="choose photos">

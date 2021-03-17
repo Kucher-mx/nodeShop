@@ -72,8 +72,8 @@ async function start() {
             useFindAndModify: false,
             useUnifiedTopology: true
         })
-        const PORT = 3002
-        app.listen(process.env.POTR || PORT, () => {
+        const PORT = 3005
+        app.listen(process.env.PORT || PORT, () => {
             console.log("the app is running on the port: ", PORT);
         })
     } catch(e){

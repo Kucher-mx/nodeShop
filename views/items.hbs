@@ -31,16 +31,13 @@
                     </li>
                 {{/each}}
                 {{#if admin}}
-                    <li class="items-page_item">
+                    <li class="addItem">
                         <a href="/items/add">
-                            <div class="items-page_item_img">
-                                +
-                            </div>
-                            <div class="items-page_item_info">
-                                <div class="item_price">{{price}}</div>
-                                <form action="" method="post" class="items_item_buy">
-                                    <button type="submit" class="btn btn_card">Купить</button>
-                                </form>
+                            <div class="addItem_content">
+                                <div class="addItem_content_img">
+                                    <img src="assets/images/addItem.svg" alt="addItem_icon">
+                                </div>
+                                <div class="addItem_content_text">Add new item</div>
                             </div>
                         </a>
                     </li>
